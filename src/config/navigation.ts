@@ -9,7 +9,8 @@ export const mainNavItems: NavItem[] = [
       { label: "Dépannage urgent", href: "/depannage-plomberie" },
       { label: "Plomberie générale", href: "/plomberie" },
       { label: "Salle de bain", href: "/renovation-salle-de-bain" },
-      { label: "Chauffage", href: "/chauffage" },
+      { label: "Charpente", href: "/charpente" },
+      { label: "Menuiserie", href: "/menuiserie" },
       { label: "Chauffe-eau", href: "/chauffe-eau" },
     ],
   },
@@ -33,6 +34,7 @@ export const serviceNavItems: NavItem[] = [
   { label: "Dépannage urgent", href: "/depannage-plomberie" },
   { label: "Plomberie générale", href: "/plomberie" },
   { label: "Salle de bain", href: "/renovation-salle-de-bain" },
-  { label: "Chauffage", href: "/chauffage" },
+  { label: "Charpente", href: "/charpente" },
+  { label: "Menuiserie", href: "/menuiserie" },
   { label: "Chauffe-eau", href: "/chauffe-eau" },
 ];

@@ -6,7 +6,7 @@ export const faqGeneral: FAQ[] = [
   {
     question: "Quels sont vos délais d'intervention en urgence ?",
     answer:
-      `Pour les urgences plomberie (fuite d'eau, canalisation bouchée, panne de chaudière), nous intervenons en moins de ${clientConfig.chiffres.delaiIntervention} dans un rayon de ${clientConfig.contact.zoneKm} km autour de ${siteConfig.address.city}. Appelez-nous au ${siteConfig.phone}.`,
+      `Pour les urgences plomberie (fuite d'eau, canalisation bouchée), nous intervenons en moins de ${clientConfig.chiffres.delaiIntervention} dans un rayon de ${clientConfig.contact.zoneKm} km autour de ${siteConfig.address.city}. Appelez-nous au ${siteConfig.phone}.`,
   },
   {
     question: "Vos devis sont-ils gratuits ?",
@@ -74,21 +74,39 @@ export const faqSalleDeBain: FAQ[] = [
   },
 ];
 
-export const faqChauffage: FAQ[] = [
+export const faqCharpente: FAQ[] = [
   {
-    question: "L'entretien de la chaudière est-il obligatoire ?",
+    question: "Comment protéger sa charpente des termites à La Réunion ?",
     answer:
-      "Oui, l'entretien annuel de votre chaudière (gaz, fioul, bois) est obligatoire selon le décret du 9 juin 2009. Il permet de garantir votre sécurité et d'optimiser les performances de votre appareil.",
+      "Le traitement anti-termites est indispensable à La Réunion. Nous appliquons un traitement préventif lors de la construction et curatif si votre charpente est déjà attaquée. Un contrôle régulier tous les 5 ans est recommandé.",
   },
   {
-    question: "Combien coûte l'installation d'une pompe à chaleur ?",
+    question: "Quels types de bois utilisez-vous pour les charpentes ?",
     answer:
-      "Le coût varie entre 8 000 et 15 000 euros selon le modèle et la puissance. De nombreuses aides existent : MaPrimeRénov', CEE, éco-prêt à taux zéro. Nous sommes certifiés RGE, condition pour bénéficier des aides.",
+      "Nous utilisons des bois traités classe 4 adaptés au climat tropical : bois exotiques (teck, ipé) ou résineux traités autoclave. Le choix dépend de votre budget et de la destination (intérieur/extérieur).",
   },
   {
-    question: "Quelle est la durée de vie d'une chaudière gaz ?",
+    question: "Votre charpente résiste-t-elle aux cyclones ?",
     answer:
-      "Une chaudière gaz bien entretenue a une durée de vie de 15 à 25 ans. Si votre chaudière a plus de 15 ans, il est recommandé de la remplacer par un modèle à condensation plus économique.",
+      "Oui, toutes nos charpentes sont conçues selon les normes cycloniques en vigueur à La Réunion (NV65 modifiée). Les assemblages et ancrages sont dimensionnés pour résister aux vents violents.",
+  },
+];
+
+export const faqMenuiserie: FAQ[] = [
+  {
+    question: "Quel bois choisir pour une terrasse à La Réunion ?",
+    answer:
+      "Pour une terrasse à La Réunion, nous recommandons des bois classe 4 ou 5 : bois exotiques (ipé, cumaru) ou bois composites. Ces essences résistent à l'humidité, aux UV et aux insectes sans traitement particulier.",
+  },
+  {
+    question: "Fabriquez-vous des menuiseries sur mesure ?",
+    answer:
+      "Oui, chaque projet est unique. Nous réalisons portes, fenêtres, escaliers, placards et aménagements intérieurs sur mesure, adaptés à vos dimensions et vos envies. Rdv sur place pour prise de mesures.",
+  },
+  {
+    question: "Quel est le délai pour une menuiserie sur mesure ?",
+    answer:
+      "Le délai varie selon la complexité du projet : comptez 2 à 4 semaines pour des fenêtres ou portes, 3 à 6 semaines pour un escalier sur mesure. Nous vous communiquons un délai précis lors du devis.",
   },
 ];
 
@@ -99,8 +117,8 @@ export const faqChauffeEau: FAQ[] = [
       "Un chauffe-eau doit généralement être remplacé au bout de 10 à 15 ans, ou en cas de fuite au niveau de la cuve, de baisse de performance ou de bruits inhabituels.",
   },
   {
-    question: "Chauffe-eau électrique ou thermodynamique ?",
+    question: "Chauffe-eau solaire ou thermodynamique à La Réunion ?",
     answer:
-      "Le chauffe-eau thermodynamique consomme jusqu'à 3 fois moins d'électricité et est éligible aux aides de l'État. L'investissement est plus important (2 000 - 3 500 euros) mais amorti en 3 à 5 ans.",
+      "À La Réunion, le chauffe-eau solaire est souvent le meilleur choix grâce au fort ensoleillement. Il couvre 70 à 90% de vos besoins en eau chaude. Le thermodynamique est une bonne alternative si votre toiture ne permet pas l'installation de panneaux.",
   },
 ];

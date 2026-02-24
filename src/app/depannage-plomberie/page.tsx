@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Phone, AlertTriangle, Droplets, ShowerHead, Flame } from "lucide-react";
+import { Phone, AlertTriangle, Droplets, ShowerHead, Zap } from "lucide-react";
 import { generatePageMetadata } from "@/lib/metadata";
 import { ServicePageLayout } from "@/components/sections/ServicePageLayout";
 import { SectionContainer } from "@/components/sections/SectionContainer";
@@ -17,11 +17,10 @@ export const metadata: Metadata = generatePageMetadata({
   path: "/depannage-plomberie",
 });
 
-const urgenceIcons = [Droplets, AlertTriangle, ShowerHead, Flame];
+const urgenceIcons = [Droplets, AlertTriangle, ShowerHead, Zap];
 
 const serviceLiesLinks: Record<string, string> = {
   "Plomberie": "/plomberie",
-  "Chauffage": "/chauffage",
   "Chauffe-eau": "/chauffe-eau",
 };
 

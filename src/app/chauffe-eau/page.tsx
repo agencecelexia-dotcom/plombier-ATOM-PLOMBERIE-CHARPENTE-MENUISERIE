@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Droplets, Zap, Leaf, Wrench } from "lucide-react";
+import { Droplets, Zap, Sun, Leaf, Wrench } from "lucide-react";
 import { generatePageMetadata } from "@/lib/metadata";
 import { ServicePageLayout } from "@/components/sections/ServicePageLayout";
 import { SectionContainer } from "@/components/sections/SectionContainer";
@@ -12,15 +12,15 @@ import { heroImages } from "@/config/images";
 import { chauffeEau, shared } from "@/config/content";
 
 export const metadata: Metadata = generatePageMetadata({
-  title: `Remplacement chauffe-eau ${siteConfig.address.city} | Ballon thermodynamique`,
-  description: `Installation et remplacement de chauffe-eau à ${siteConfig.address.city}. Électrique, thermodynamique, détartrage. Économies d'énergie garanties. Devis gratuit.`,
+  title: `Chauffe-eau ${siteConfig.address.city} | Solaire, thermodynamique, électrique`,
+  description: `Installation et remplacement de chauffe-eau à ${siteConfig.address.city} (La Réunion). Solaire, thermodynamique, électrique. Profitez du soleil réunionnais. Devis gratuit.`,
   path: "/chauffe-eau",
 });
 
-const serviceIcons = [Zap, Leaf, Wrench, Droplets];
+const serviceIcons = [Zap, Sun, Leaf, Wrench];
 
 const serviceLiesLinks: Record<string, string> = {
-  "Chauffage": "/chauffage",
+  "Plomberie": "/plomberie",
   "Dépannage plomberie": "/depannage-plomberie",
 };
 
@@ -31,7 +31,7 @@ export default function ChauffeEauPage() {
         title: chauffeEau.hero.title,
         subtitle: chauffeEau.hero.subtitle,
         imagePlaceholder: {
-          prompt: "Technicien plombier installant un chauffe-eau thermodynamique neuf dans un garage propre, branchements electriques et hydrauliques visibles, photo realiste, ratio 16:9",
+          prompt: "Chauffe-eau solaire avec panneaux sur toit de maison réunionnaise, ciel bleu tropical, végétation luxuriante, photo réaliste, ratio 16:9",
           aspectRatio: "16/9",
           src: heroImages["chauffe-eau"] || undefined,
         },
@@ -74,18 +74,19 @@ export default function ChauffeEauPage() {
           title={chauffeEau.comparatif.title}
           subtitle={chauffeEau.comparatif.subtitle}
         />
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="rounded-xl border overflow-hidden bg-white">
-            <div className="grid grid-cols-3 bg-primary text-primary-foreground text-sm font-bold">
+            <div className="grid grid-cols-4 bg-primary text-primary-foreground text-sm font-bold">
               {chauffeEau.comparatif.headers.map((header) => (
                 <div key={header} className={`p-4 ${header !== chauffeEau.comparatif.headers[0] ? "text-center" : ""}`}>{header}</div>
               ))}
             </div>
             {chauffeEau.comparatif.rows.map((row, i) => (
-              <div key={row.critere} className={`grid grid-cols-3 text-sm ${i % 2 === 0 ? "bg-muted/30" : ""}`}>
+              <div key={row.critere} className={`grid grid-cols-4 text-sm ${i % 2 === 0 ? "bg-muted/30" : ""}`}>
                 <div className="p-4 font-medium">{row.critere}</div>
                 <div className="p-4 text-center text-muted-foreground">{row.electrique}</div>
-                <div className="p-4 text-center font-medium text-accent-500">{row.thermo}</div>
+                <div className="p-4 text-center font-medium text-accent-500">{row.solaire}</div>
+                <div className="p-4 text-center text-muted-foreground">{row.thermo}</div>
               </div>
             ))}
           </div>
