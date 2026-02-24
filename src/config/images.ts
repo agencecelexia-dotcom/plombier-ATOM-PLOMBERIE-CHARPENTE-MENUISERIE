@@ -1,5 +1,5 @@
 /**
- * Mapping des images du site — 33 images uniques pour 46 emplacements.
+ * Mapping des images du site — Images pour tous les emplacements.
  *
  * Les constantes partagees permettent de remplir UN chemin
  * et toutes les pages qui reutilisent cette image se mettent a jour.
@@ -9,39 +9,34 @@
 // Images partagees (1 fichier → plusieurs emplacements)
 // ============================================================
 
-/** #7 — 21:9 — heroes blog, avis-clients, contact, a-propos, realisations + section cta-bandeau */
+/** Hero generique — heroes blog, avis-clients, contact, a-propos, realisations + section cta-bandeau */
 const HERO_GENERIQUE = "/images/heroes/generique-plombier.jpeg";
 
-/** #3 — 16:9 — hero plomberie + page plomberie-tuyauterie */
+/** Hero plomberie + page plomberie-tuyauterie */
 const IMG_PLOMBERIE_HERO = "/images/heroes/plomberie.jpeg";
 
-/** #4 — 16:9 — hero renovation-sdb + page renovation-complete + realisation sdb-oullins-after */
+/** Hero renovation-sdb + page renovation-complete */
 const IMG_RENOVATION_SDB = "/images/heroes/renovation-sdb.jpeg";
 
-/** #15 — 4:3 — page douche-italienne + realisation douche-lyon7-after */
+/** Page douche-italienne */
 const IMG_DOUCHE_ITALIENNE = "/images/pages/renovation-douche-italienne.jpeg";
 
-/** #16 — 4:3 — page PMR + realisation sdb-pmr-lyon6-after */
+/** Page PMR */
 const IMG_SDB_PMR = "/images/pages/renovation-pmr.jpeg";
 
-/** #17 — 3:2 — page chaudiere-gaz + realisation chaudiere-tassin-after */
-const IMG_CHAUDIERE_GAZ = "/images/pages/chauffage-chaudiere-gaz.jpeg";
-
-/** #19 — 3:2 — page plancher-chauffant + realisation plancher-ecully-after */
-const IMG_PLANCHER_CHAUFFANT = "/images/pages/chauffage-plancher-chauffant.jpeg";
-
-/** #8 — 4:3 — section urgence-card + realisation depannage-lyon2-before */
+/** Section urgence-card + realisation depannage-before */
 const IMG_FUITE_EAU = "/images/sections/urgence-card.png";
 
 // ============================================================
-// Hero pages (11 emplacements → 7 images uniques)
+// Hero pages
 // ============================================================
 export const heroImages: Record<string, string> = {
   "accueil":              "/images/heroes/accueil.jpeg",
   "depannage-plomberie":  "/images/heroes/depannage-plomberie.jpeg",
   "plomberie":            IMG_PLOMBERIE_HERO,
   "renovation-sdb":       IMG_RENOVATION_SDB,
-  "chauffage":            "/images/heroes/chauffage.jpeg",
+  "charpente":            "/images/heroes/charpente.jpeg",
+  "menuiserie":           "/images/heroes/menuiserie.jpeg",
   "chauffe-eau":          "/images/heroes/chauffe-eau.jpeg",
   "blog":                 HERO_GENERIQUE,
   "avis-clients":         HERO_GENERIQUE,
@@ -51,7 +46,7 @@ export const heroImages: Record<string, string> = {
 };
 
 // ============================================================
-// Sections (3 emplacements → 2 images uniques)
+// Sections
 // ============================================================
 export const sectionImages: Record<string, string> = {
   "cta-bandeau":          HERO_GENERIQUE,
@@ -60,7 +55,7 @@ export const sectionImages: Record<string, string> = {
 };
 
 // ============================================================
-// Pages specifiques (12 emplacements → 10 images uniques)
+// Pages specifiques
 // ============================================================
 export const pageImages: Record<string, string> = {
   // A propos
@@ -75,34 +70,39 @@ export const pageImages: Record<string, string> = {
   "renovation-douche-italienne": IMG_DOUCHE_ITALIENNE,
   "renovation-complete":         IMG_RENOVATION_SDB,
   "renovation-pmr":              IMG_SDB_PMR,
-  // Chauffage
-  "chauffage-chaudiere-gaz":     IMG_CHAUDIERE_GAZ,
-  "chauffage-pac":               "/images/pages/chauffage-pac.jpeg",
-  "chauffage-plancher-chauffant": IMG_PLANCHER_CHAUFFANT,
+  // Charpente
+  "charpente-traditionnelle":    "/images/pages/charpente-traditionnelle.jpeg",
+  "charpente-renovation":        "/images/pages/charpente-renovation.jpeg",
+  "charpente-anti-termites":     "/images/pages/charpente-anti-termites.jpeg",
+  // Menuiserie
+  "menuiserie-portes-fenetres":  "/images/pages/menuiserie-portes-fenetres.jpeg",
+  "menuiserie-escaliers":        "/images/pages/menuiserie-escaliers.jpeg",
+  "menuiserie-terrasses":        "/images/pages/menuiserie-terrasses.jpeg",
+  "menuiserie-amenagements":     "/images/pages/menuiserie-amenagements.jpeg",
 };
 
 // ============================================================
-// Realisations avant/apres (20 emplacements → 14 images uniques)
+// Realisations avant/apres
 // ============================================================
 export const realisationImages: Record<string, string> = {
-  "sdb-villeurbanne-before":        "/images/realisations/sdb-villeurbanne-before.jpeg",
-  "sdb-villeurbanne-after":         "/images/realisations/sdb-villeurbanne-after.png",
-  "cuisine-lyon3-before":           "/images/realisations/cuisine-lyon3-before.png",
-  "cuisine-lyon3-after":            "/images/realisations/cuisine-lyon3-after.jpeg",
-  "chauffe-eau-caluire-before":     "/images/realisations/chauffe-eau-caluire-before.png",
-  "chauffe-eau-caluire-after":      "/images/realisations/chauffe-eau-caluire-after.png",
-  "pac-bron-before":                "/images/realisations/pac-bron-before.jpeg",
-  "pac-bron-after":                 "/images/realisations/pac-bron-after.png",
-  "sdb-pmr-lyon6-before":           "/images/realisations/sdb-pmr-lyon6-before.jpeg",
-  "sdb-pmr-lyon6-after":            IMG_SDB_PMR,
-  "chaudiere-tassin-before":        "/images/realisations/chaudiere-tassin-before.png",
-  "chaudiere-tassin-after":         IMG_CHAUDIERE_GAZ,
-  "douche-lyon7-before":            "/images/realisations/douche-lyon7-before.png",
-  "douche-lyon7-after":             IMG_DOUCHE_ITALIENNE,
-  "plancher-chauffant-ecully-before": "/images/realisations/plancher-chauffant-ecully-before.png",
-  "plancher-chauffant-ecully-after":  IMG_PLANCHER_CHAUFFANT,
-  "depannage-lyon2-before":         IMG_FUITE_EAU,
-  "depannage-lyon2-after":          "/images/realisations/depannage-lyon2-after.png",
-  "sdb-complete-oullins-before":    "/images/realisations/sdb-complete-oullins-before.png",
-  "sdb-complete-oullins-after":     IMG_RENOVATION_SDB,
+  "sdb-tampon-before":                    "/images/realisations/sdb-tampon-before.jpeg",
+  "sdb-tampon-after":                     "/images/realisations/sdb-tampon-after.jpeg",
+  "cuisine-saint-pierre-before":          "/images/realisations/cuisine-saint-pierre-before.jpeg",
+  "cuisine-saint-pierre-after":           "/images/realisations/cuisine-saint-pierre-after.jpeg",
+  "chauffe-eau-entre-deux-before":        "/images/realisations/chauffe-eau-entre-deux-before.jpeg",
+  "chauffe-eau-entre-deux-after":         "/images/realisations/chauffe-eau-entre-deux-after.jpeg",
+  "charpente-petite-ile-before":          "/images/realisations/charpente-petite-ile-before.jpeg",
+  "charpente-petite-ile-after":           "/images/realisations/charpente-petite-ile-after.jpeg",
+  "sdb-pmr-saint-louis-before":           "/images/realisations/sdb-pmr-saint-louis-before.jpeg",
+  "sdb-pmr-saint-louis-after":            IMG_SDB_PMR,
+  "menuiserie-escalier-tampon-before":    "/images/realisations/menuiserie-escalier-tampon-before.jpeg",
+  "menuiserie-escalier-tampon-after":     "/images/realisations/menuiserie-escalier-tampon-after.jpeg",
+  "douche-saint-joseph-before":           "/images/realisations/douche-saint-joseph-before.jpeg",
+  "douche-saint-joseph-after":            IMG_DOUCHE_ITALIENNE,
+  "charpente-renovation-cilaos-before":   "/images/realisations/charpente-renovation-cilaos-before.jpeg",
+  "charpente-renovation-cilaos-after":    "/images/realisations/charpente-renovation-cilaos-after.jpeg",
+  "depannage-saint-pierre-before":        IMG_FUITE_EAU,
+  "depannage-saint-pierre-after":         "/images/realisations/depannage-saint-pierre-after.jpeg",
+  "terrasse-bois-tampon-before":          "/images/realisations/terrasse-bois-tampon-before.jpeg",
+  "terrasse-bois-tampon-after":           "/images/realisations/terrasse-bois-tampon-after.jpeg",
 };

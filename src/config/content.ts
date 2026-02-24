@@ -30,7 +30,7 @@ export const shared = {
 // ─── Composants sections ───
 
 export const heroSection = {
-  eyebrow: `Plombier chauffagiste — ${siteConfig.address.city}`,
+  eyebrow: `Plombier · Charpentier · Menuisier — ${siteConfig.address.city}`,
 };
 
 export const ctaSection = {
@@ -58,7 +58,7 @@ export const urgencyProjectCards = {
   },
   project: {
     title: "Je planifie des travaux",
-    subtitle: "Rénovation, installation, remplacement...",
+    subtitle: "Rénovation, charpente, menuiserie, plomberie...",
     cta: shared.cta.demanderDevis,
   },
 };
@@ -73,7 +73,7 @@ export const contactForm = {
   },
   placeholders: {
     nom: "Votre nom",
-    telephone: "06 XX XX XX XX",
+    telephone: "06 92 XX XX XX",
     email: "votre@email.fr",
     service: "Sélectionnez un service",
     message: "Décrivez votre besoin...",
@@ -82,7 +82,8 @@ export const contactForm = {
     "Urgence / Dépannage",
     "Plomberie générale",
     "Rénovation salle de bain",
-    "Chauffage",
+    "Charpente",
+    "Menuiserie",
     "Chauffe-eau",
     "Autre",
   ],
@@ -99,9 +100,9 @@ export const contactForm = {
 export const homepage = {
   hero: {
     title: clientConfig.seo.slogan,
-    subtitle: "Fuite d'eau, WC bouché, panne de chaudière ? Devis gratuit sous 48h.",
+    subtitle: "Fuite d'eau, WC bouché, charpente, menuiserie ? Devis gratuit sous 48h.",
     ctaSecondaryLabel: shared.cta.demanderDevis,
-    badges: ["Intervention <2h", "Décennale", "Devis gratuit", `${siteConfig.googleRating}/5`],
+    badges: ["Intervention rapide", "Devis gratuit", `${siteConfig.googleRating}/5`],
   },
   services: {
     title: "Des solutions pour tous vos besoins",
@@ -123,7 +124,7 @@ export const depannage = {
   hero: {
     title: `Dépannage plomberie à ${siteConfig.address.city}`,
     subtitle: "Fuite d'eau, WC bouché, dégât des eaux ? Appelez maintenant.",
-    badges: ["Urgence 24h/24", "Intervention <2h", "7j/7"],
+    badges: ["Urgence 24h/24", "Intervention rapide", "7j/7"],
   },
   urgences: {
     title: "Les urgences que nous prenons en charge",
@@ -132,7 +133,7 @@ export const depannage = {
       { title: "Fuite d'eau", desc: "Fuite sur canalisation, robinet, raccord ou chasse d'eau. Intervention rapide pour limiter les dégâts." },
       { title: "Dégât des eaux", desc: "Coupure d'eau, assèchement et réparation. Nous vous accompagnons pour le constat d'assurance." },
       { title: "Canalisation bouchée", desc: "Débouchage WC, évier, douche ou canalisation principale par furet ou haute pression." },
-      { title: "Panne de chaudière", desc: "Diagnostic et réparation de votre chaudière gaz ou pompe à chaleur, même le week-end." },
+      { title: "Panne de chauffe-eau", desc: "Diagnostic et réparation de votre chauffe-eau électrique ou solaire, même le week-end." },
     ],
   },
   etapes: {
@@ -140,7 +141,7 @@ export const depannage = {
     subtitle: "3 étapes simples pour un dépannage sans stress.",
     items: [
       { title: "Vous appelez", desc: "Décrivez-nous votre problème par téléphone. Nous évaluons l'urgence et vous donnons un tarif indicatif." },
-      { title: "On intervient sous 2h", desc: "Un technicien qualifié se déplace chez vous avec tout le matériel nécessaire." },
+      { title: "On intervient rapidement", desc: "Un technicien qualifié se déplace chez vous avec tout le matériel nécessaire." },
       { title: "Problème résolu", desc: "Réparation immédiate dans la majorité des cas. Facture claire, pas de mauvaise surprise." },
     ],
   },
@@ -156,7 +157,7 @@ export const depannage = {
     ],
     footnote: "* Tarifs TTC indicatifs hors pièces. Supplément possible en soirée, week-end et jours fériés.",
   },
-  servicesLies: ["Plomberie", "Chauffage", "Chauffe-eau"],
+  servicesLies: ["Plomberie", "Chauffe-eau"],
 };
 
 // ─── Page Plomberie ───
@@ -182,7 +183,7 @@ export const plomberie = {
       `Plus de ${siteConfig.yearsExperience} ans d'expérience`,
       "Matériel professionnel dernière génération",
       "Chantier laissé propre après intervention",
-      "Garantie décennale sur tous les travaux",
+      "Assurance décennale sur tous les travaux",
       "Devis détaillé gratuit sous 48h",
       "Conseil personnalisé et transparent",
     ],
@@ -223,42 +224,66 @@ export const renovationSdb = {
   servicesLies: ["Plomberie", "Chauffe-eau"],
 };
 
-// ─── Page Chauffage ───
+// ─── Page Charpente ───
 
-export const chauffage = {
+export const charpente = {
   hero: {
-    title: `Chauffage à ${siteConfig.address.city}`,
-    subtitle: "Chaudière gaz, pompe à chaleur, plancher chauffant. Certifié RGE pour bénéficier des aides.",
-    badges: ["Certifié RGE", "Entretien annuel", "Éligible aides"],
+    title: `Charpente à ${siteConfig.address.city}`,
+    subtitle: "Construction, rénovation et traitement de charpente bois. Expertise adaptée au climat réunionnais.",
+    badges: ["Bois traité", "Anti-termites", "Devis gratuit"],
   },
   solutions: {
-    title: "Nos solutions de chauffage",
-    subtitle: "Installation, remplacement et dépannage de tous types de systèmes de chauffage.",
+    title: "Nos prestations charpente",
+    subtitle: "Construction neuve ou rénovation, nous intervenons sur tous types de charpentes à La Réunion.",
     items: [
-      { title: "Chaudière gaz condensation", desc: "Installation et remplacement de chaudière gaz dernière génération. Jusqu'à 30% d'économies sur votre facture." },
-      { title: "Pompe à chaleur air-eau", desc: "Solution écologique et économique. Éligible aux aides MaPrimeRénov' et CEE. Nous sommes certifiés RGE." },
-      { title: "Plancher chauffant", desc: "Confort optimal et diffusion homogène de la chaleur. Idéal en rénovation ou construction neuve." },
+      { title: "Charpente traditionnelle", desc: "Réalisation de charpentes en bois massif pour maisons individuelles, cases créoles et bâtiments. Assemblages traditionnels et bois sélectionnés pour la durabilité." },
+      { title: "Rénovation de toiture", desc: "Remplacement de pièces de charpente abîmées, renforcement de structure, changement de couverture. Nous redonnons vie à votre toiture." },
+      { title: "Traitement anti-termites", desc: "Traitement préventif et curatif contre les termites et champignons. Indispensable à La Réunion pour protéger votre charpente durablement." },
     ],
   },
-  entretien: {
-    title: "Entretien annuel chaudière",
-    subtitle: "L'entretien de votre chaudière est obligatoire chaque année. Nous intervenons sur toutes les marques.",
-    cardTitle: "Ce qui est inclus",
-    prix: "À partir de 89 € TTC",
+  avantages: {
+    title: "Pourquoi nous confier votre charpente ?",
     items: [
-      "Vérification de la combustion et des émissions",
-      "Nettoyage du corps de chauffe et du brûleur",
-      "Contrôle de la pression et du circulateur",
-      "Vérification des dispositifs de sécurité",
-      "Mesure du taux de CO (monoxyde de carbone)",
-      "Remise de l'attestation d'entretien",
+      "Connaissance des bois adaptés au climat tropical",
+      "Traitement anti-termites systématique",
+      "Respect des normes cycloniques (NV65 modifiée)",
+      "Assurance décennale",
+      "Devis détaillé gratuit",
+      "Intervention dans tout le sud de La Réunion",
     ],
   },
-  rge: {
-    title: "Certifié RGE — Éligible aux aides de l'État",
-    text: "Notre certification RGE (Reconnu Garant de l'Environnement) vous permet de bénéficier des aides financières pour vos travaux de chauffage : MaPrimeRénov', CEE, éco-prêt à taux zéro.",
+  servicesLies: ["Menuiserie", "Plomberie"],
+};
+
+// ─── Page Menuiserie ───
+
+export const menuiserie = {
+  hero: {
+    title: `Menuiserie à ${siteConfig.address.city}`,
+    subtitle: "Portes, fenêtres, escaliers, terrasses bois. Fabrication et pose sur mesure adaptées au climat tropical.",
   },
-  servicesLies: ["Chauffe-eau", "Dépannage plomberie"],
+  services: {
+    title: "Nos services de menuiserie",
+    subtitle: "Menuiserie intérieure et extérieure, travail artisanal et matériaux de qualité.",
+    items: [
+      { title: "Portes et fenêtres", desc: "Fabrication et pose de portes d'entrée, portes intérieures, fenêtres et baies vitrées en bois ou mixte. Adaptation au climat réunionnais." },
+      { title: "Escaliers sur mesure", desc: "Conception et réalisation d'escaliers en bois : droit, tournant, hélicoïdal. Design personnalisé et finitions soignées." },
+      { title: "Terrasses et varangues", desc: "Construction de terrasses bois, varangues et pergolas. Bois traité classe 4 pour résister aux intempéries tropicales." },
+      { title: "Aménagements intérieurs", desc: "Placards sur mesure, dressings, bibliothèques, meubles de rangement. Optimisation de vos espaces avec des solutions bois personnalisées." },
+    ],
+  },
+  avantages: {
+    title: "Pourquoi choisir notre menuiserie ?",
+    items: [
+      "Travail artisanal et finitions soignées",
+      "Bois traités adaptés au climat tropical",
+      "Sur mesure : chaque projet est unique",
+      "Assurance décennale",
+      "Devis détaillé gratuit",
+      "Pose soignée et chantier propre",
+    ],
+  },
+  servicesLies: ["Charpente", "Salle de bain"],
 };
 
 // ─── Page Chauffe-eau ───
@@ -266,32 +291,31 @@ export const chauffage = {
 export const chauffeEau = {
   hero: {
     title: `Chauffe-eau à ${siteConfig.address.city}`,
-    subtitle: "Électrique, thermodynamique, solaire. Conseil expert pour choisir la solution la plus adaptée à vos besoins.",
+    subtitle: "Électrique, solaire, thermodynamique. Conseil expert pour choisir la solution la plus adaptée au climat réunionnais.",
   },
   services: {
     title: "Nos services chauffe-eau",
     subtitle: "Installation, remplacement, entretien et dépannage de tous types de chauffe-eau.",
     items: [
       { title: "Chauffe-eau électrique", desc: "Remplacement et installation de cumulus électrique, toutes capacités (75L à 300L). Intervention rapide en cas de panne." },
+      { title: "Chauffe-eau solaire", desc: "Profitez du soleil réunionnais ! Installation de chauffe-eau solaire pour réduire votre facture d'énergie. Solution écologique et économique." },
       { title: "Ballon thermodynamique", desc: "Jusqu'à 3x moins d'électricité. Éligible aux aides de l'État. Amortissement en 3 à 5 ans." },
       { title: "Détartrage et entretien", desc: "Prolongez la durée de vie de votre chauffe-eau. Le détartrage permet de maintenir les performances optimales." },
-      { title: "Dépannage", desc: "Plus d'eau chaude ? Fuite sur le groupe de sécurité ? Nous intervenons rapidement pour vous dépanner." },
     ],
   },
   comparatif: {
-    title: "Électrique vs Thermodynamique",
-    subtitle: "Comparez les deux technologies pour faire le bon choix.",
-    headers: ["Critère", "Électrique", "Thermodynamique"],
+    title: "Électrique vs Solaire vs Thermodynamique",
+    subtitle: "Comparez les technologies pour faire le bon choix à La Réunion.",
+    headers: ["Critère", "Électrique", "Solaire", "Thermodynamique"],
     rows: [
-      { critere: "Consommation", electrique: "Élevée", thermo: "3x moins" },
-      { critere: "Prix installation", electrique: "500 - 1 200 €", thermo: "2 000 - 3 500 €" },
-      { critere: "Aides financières", electrique: "Aucune", thermo: "MaPrimeRénov', CEE" },
-      { critere: "Durée de vie", electrique: "10 - 15 ans", thermo: "15 - 20 ans" },
-      { critere: "Amortissement", electrique: "-", thermo: "3 à 5 ans" },
-      { critere: "Classe énergie", electrique: "C / D", thermo: "A / A+" },
+      { critere: "Consommation", electrique: "Élevée", solaire: "Quasi nulle", thermo: "3x moins" },
+      { critere: "Prix installation", electrique: "500 - 1 200 €", solaire: "2 500 - 4 500 €", thermo: "2 000 - 3 500 €" },
+      { critere: "Aides financières", electrique: "Aucune", solaire: "Crédit d'impôt, aides locales", thermo: "MaPrimeRénov', CEE" },
+      { critere: "Durée de vie", electrique: "10 - 15 ans", solaire: "20 - 25 ans", thermo: "15 - 20 ans" },
+      { critere: "Adapté Réunion", electrique: "Standard", solaire: "Idéal (fort ensoleillement)", thermo: "Très bien" },
     ],
   },
-  servicesLies: ["Chauffage", "Dépannage plomberie"],
+  servicesLies: ["Plomberie", "Dépannage plomberie"],
 };
 
 // ─── Page Contact ───
@@ -343,9 +367,9 @@ export const aPropos = {
   histoire: {
     title: "Notre histoire",
     paragraphs: [
-      `Fondé en ${siteConfig.foundedYear} par ${siteConfig.founder}, ${siteConfig.name} est né d'une passion pour le métier et d'une conviction simple : un plombier doit être fiable, réactif et transparent.`,
-      `Après ${siteConfig.yearsExperience} ans d'expérience et plus de ${siteConfig.interventionsCount} interventions, nous restons fidèles à ces valeurs. Notre équipe de techniciens qualifiés intervient chaque jour dans ${siteConfig.address.city} et ses environs pour des dépannages, installations et rénovations.`,
-      "Certifiés RGE et couverts par une assurance décennale, nous accompagnons nos clients dans tous leurs projets de plomberie et de chauffage, du dépannage urgent à la rénovation complète.",
+      `Fondé en ${siteConfig.foundedYear} par ${siteConfig.founder}, ${siteConfig.name} est né d'une passion pour les métiers du bâtiment et d'une conviction simple : un artisan doit être fiable, réactif et transparent.`,
+      `Après ${siteConfig.yearsExperience} ans d'expérience et plus de ${siteConfig.interventionsCount} interventions, nous restons fidèles à ces valeurs. Notre équipe intervient chaque jour au ${siteConfig.address.city} et dans le sud de La Réunion pour des dépannages, installations, travaux de charpente et menuiserie.`,
+      "Couverts par une assurance décennale, nous accompagnons nos clients dans tous leurs projets : plomberie, charpente bois, menuiserie sur mesure, du dépannage urgent à la rénovation complète.",
     ],
   },
   equipe: {
@@ -373,7 +397,6 @@ export const aPropos = {
     title: "Certifications et assurances",
     subtitle: "Votre tranquillité d'esprit est notre priorité.",
     items: [
-      { label: "Certification RGE QualiPAC", value: siteConfig.rge },
       { label: "Assurance décennale", value: siteConfig.assuranceDecennale },
       { label: "SIRET", value: siteConfig.siret },
     ],
@@ -384,12 +407,12 @@ export const aPropos = {
 
 export const blog = {
   hero: {
-    title: "Blog — Conseils et astuces plomberie",
+    title: "Blog — Conseils et astuces",
     subtitle: "Retrouvez bientôt nos articles pour vous aider au quotidien.",
   },
   empty: {
     title: "Bientôt disponible",
-    text: "Nous préparons des articles sur l'entretien de votre plomberie, les économies d'énergie, les aides pour la rénovation... Revenez bientôt !",
+    text: "Nous préparons des articles sur l'entretien de votre plomberie, la protection de votre charpente contre les termites, les astuces menuiserie... Revenez bientôt !",
   },
 };
 
@@ -400,7 +423,7 @@ export const realisationsPage = {
     title: "Nos réalisations — Avant / Après",
     subtitle: "Découvrez nos derniers chantiers en images. Chaque projet est réalisé avec soin et professionnalisme.",
   },
-  categories: ["Tout", "Salle de bain", "Plomberie", "Chauffage", "Chauffe-eau"],
+  categories: ["Tout", "Salle de bain", "Plomberie", "Charpente", "Menuiserie", "Chauffe-eau"],
   empty: "Aucune réalisation dans cette catégorie pour le moment.",
   cta: {
     title: "Vous avez un projet similaire ?",

@@ -2,23 +2,23 @@ import type { Realisation } from "@/types";
 
 export const realisations: Realisation[] = [
   {
-    id: "sdb-villeurbanne",
+    id: "sdb-tampon",
     title: "Rénovation salle de bain complète",
     category: "Salle de bain",
-    city: "Villeurbanne",
+    city: "Le Tampon",
     description:
-      "Transformation d'une salle de bain années 80 en espace moderne avec douche italienne, meuble vasque et miroir LED.",
+      "Transformation d'une salle de bain vétuste en espace moderne avec douche italienne, meuble vasque et miroir LED.",
     beforePrompt:
-      "Vieille salle de bain années 80, baignoire jaunâtre, carrelage rose fissuré, robinetterie rouillée, photo réaliste brute, ratio 4:3",
+      "Vieille salle de bain tropicale, baignoire jaunâtre, carrelage fissuré, robinetterie rouillée, photo réaliste brute, ratio 4:3",
     afterPrompt:
       "Même salle de bain rénovée, douche italienne carrelage gris anthracite, meuble vasque bois clair, miroir LED, photo réaliste, ratio 4:3",
     aspectRatio: "4/3",
   },
   {
-    id: "cuisine-lyon3",
+    id: "cuisine-saint-pierre",
     title: "Réfection plomberie cuisine",
     category: "Plomberie",
-    city: "Lyon 3e",
+    city: "Saint-Pierre",
     description:
       "Remplacement complet de la tuyauterie et installation d'un évier encastré avec robinet col de cygne.",
     beforePrompt:
@@ -28,36 +28,36 @@ export const realisations: Realisation[] = [
     aspectRatio: "4/3",
   },
   {
-    id: "chauffe-eau-caluire",
-    title: "Remplacement chauffe-eau",
+    id: "chauffe-eau-entre-deux",
+    title: "Installation chauffe-eau solaire",
     category: "Chauffe-eau",
-    city: "Caluire-et-Cuire",
+    city: "L'Entre-Deux",
     description:
-      "Remplacement d'un vieux chauffe-eau rouillé par un ballon thermodynamique classe A.",
+      "Installation d'un chauffe-eau solaire en remplacement d'un vieux cumulus électrique. Économies d'énergie garanties.",
     beforePrompt:
-      "Vieux chauffe-eau rouillé encrassé dans placard technique, tuyaux oxydés, photo réaliste, ratio 4:3",
+      "Vieux chauffe-eau électrique rouillé encrassé dans local technique tropical, tuyaux oxydés, photo réaliste, ratio 4:3",
     afterPrompt:
-      "Chauffe-eau thermodynamique neuf blanc, tuyauterie cuivre neuve, étiquette énergie A, photo réaliste, ratio 4:3",
+      "Chauffe-eau solaire neuf avec panneaux sur toit créole, ballon de stockage propre, tuyauterie cuivre neuve, ciel bleu tropical, photo réaliste, ratio 4:3",
     aspectRatio: "4/3",
   },
   {
-    id: "pac-bron",
-    title: "Installation pompe à chaleur",
-    category: "Chauffage",
-    city: "Bron",
+    id: "charpente-petite-ile",
+    title: "Construction charpente traditionnelle",
+    category: "Charpente",
+    city: "Petite-Île",
     description:
-      "Remplacement d'une vieille chaudière fioul par une pompe à chaleur air-eau compacte.",
+      "Réalisation d'une charpente traditionnelle en bois traité pour une maison individuelle neuve.",
     beforePrompt:
-      "Vieille chaudière fioul volumineuse dans cave sombre, tuyaux rouillés, photo réaliste, ratio 4:3",
+      "Maison en construction murs en parpaings sans toit, ferraillage apparent, chantier réunionnais, ciel tropical, photo réaliste, ratio 4:3",
     afterPrompt:
-      "Pompe à chaleur air-eau compacte installée dans buanderie moderne, écran digital, photo réaliste, ratio 4:3",
+      "Belle charpente traditionnelle bois neuve montée sur maison, fermes et pannes assemblées, bois traité couleur miel, toit en cours de couverture, photo réaliste, ratio 4:3",
     aspectRatio: "4/3",
   },
   {
-    id: "sdb-pmr-lyon6",
+    id: "sdb-pmr-saint-louis",
     title: "Salle de bain PMR",
     category: "Salle de bain",
-    city: "Lyon 6e",
+    city: "Saint-Louis",
     description:
       "Adaptation d'une salle de bain pour personne à mobilité réduite avec douche plain-pied et barres d'appui.",
     beforePrompt:
@@ -67,23 +67,23 @@ export const realisations: Realisation[] = [
     aspectRatio: "4/3",
   },
   {
-    id: "chaudiere-tassin",
-    title: "Remplacement chaudière gaz",
-    category: "Chauffage",
-    city: "Tassin-la-Demi-Lune",
+    id: "menuiserie-escalier-tampon",
+    title: "Escalier bois sur mesure",
+    category: "Menuiserie",
+    city: "Le Tampon",
     description:
-      "Installation d'une chaudière gaz à condensation dernière génération en remplacement d'un modèle de 20 ans.",
+      "Conception et réalisation d'un escalier tournant en bois massif avec garde-corps ouvragé.",
     beforePrompt:
-      "Vieille chaudière gaz murale encrassée, tuyaux anciens, thermostat analogique, photo réaliste, ratio 4:3",
+      "Ouverture de trémie dans dalle béton, intérieur maison réunionnaise en chantier, escalier provisoire échelle, photo réaliste, ratio 4:3",
     afterPrompt:
-      "Chaudière gaz condensation murale blanche moderne, écran digital vert, tuyauterie cuivre propre, thermostat connecté, photo réaliste, ratio 4:3",
+      "Magnifique escalier tournant bois massif vernis, garde-corps ouvragé, marches larges, intérieur maison réunionnaise lumineuse, photo réaliste, ratio 4:3",
     aspectRatio: "4/3",
   },
   {
-    id: "douche-lyon7",
+    id: "douche-saint-joseph",
     title: "Douche italienne sur mesure",
     category: "Salle de bain",
-    city: "Lyon 7e",
+    city: "Saint-Joseph",
     description:
       "Création d'une douche italienne avec receveur extra-plat, carrelage grand format et niche murale éclairée.",
     beforePrompt:
@@ -93,25 +93,25 @@ export const realisations: Realisation[] = [
     aspectRatio: "4/3",
   },
   {
-    id: "plancher-chauffant-ecully",
-    title: "Installation plancher chauffant",
-    category: "Chauffage",
-    city: "Écully",
+    id: "charpente-renovation-cilaos",
+    title: "Rénovation charpente case créole",
+    category: "Charpente",
+    city: "Cilaos",
     description:
-      "Pose d'un plancher chauffant hydraulique dans une maison en rénovation complète.",
+      "Rénovation complète de la charpente d'une case créole traditionnelle avec traitement anti-termites.",
     beforePrompt:
-      "Sol brut en béton dans pièce en rénovation, gaines électriques apparentes, chantier en cours, photo réaliste, ratio 4:3",
+      "Charpente bois ancienne case créole abîmée, poutres rongées par termites, tuiles cassées, intérieur visible, photo réaliste, ratio 4:3",
     afterPrompt:
-      "Installation plancher chauffant en cours, tubes PER rouges en serpentin sur isolant argenté, vue plongée, chantier propre, photo réaliste, ratio 4:3",
+      "Charpente case créole entièrement rénovée, bois traité neuf, assemblages traditionnels, couverture tôle neuve, case créole colorée, photo réaliste, ratio 4:3",
     aspectRatio: "4/3",
   },
   {
-    id: "depannage-lyon2",
+    id: "depannage-saint-pierre",
     title: "Réparation fuite urgente",
     category: "Plomberie",
-    city: "Lyon 2e",
+    city: "Saint-Pierre",
     description:
-      "Intervention d'urgence pour une fuite sur canalisation d'eau chaude dans un appartement ancien.",
+      "Intervention d'urgence pour une fuite sur canalisation d'eau dans un appartement.",
     beforePrompt:
       "Fuite d'eau importante sur tuyau cuivre sous évier, gouttes d'eau, sol mouillé, urgence, photo réaliste, ratio 4:3",
     afterPrompt:
@@ -119,16 +119,16 @@ export const realisations: Realisation[] = [
     aspectRatio: "4/3",
   },
   {
-    id: "sdb-complete-oullins",
-    title: "Rénovation salle de bain luxe",
-    category: "Salle de bain",
-    city: "Oullins",
+    id: "terrasse-bois-tampon",
+    title: "Terrasse bois et varangue",
+    category: "Menuiserie",
+    city: "Le Tampon",
     description:
-      "Rénovation haut de gamme avec double vasque, robinetterie laiton brossé et carrelage terrazzo.",
+      "Construction d'une terrasse bois et varangue avec bois traité classe 4, adaptée au climat tropical.",
     beforePrompt:
-      "Salle de bain ancienne, carrelage blanc basique, lavabo sur colonne, baignoire jaunâtre, éclairage néon, photo réaliste, ratio 4:3",
+      "Jardin tropical pelouse et terre battue, arrière de maison réunionnaise sans terrasse, vue sur montagne, photo réaliste, ratio 4:3",
     afterPrompt:
-      "Magnifique salle de bain rénovée style contemporain, grande douche italienne paroi vitrée, vasque pierre naturelle, robinetterie laiton brossé, carrelage terrazzo, plantes vertes, lumière naturelle, photo réaliste haut de gamme, ratio 4:3",
+      "Belle terrasse bois exotique neuve avec varangue couverte, garde-corps bois, mobilier de jardin, végétation tropicale, vue montagne, photo réaliste, ratio 4:3",
     aspectRatio: "4/3",
   },
 ];

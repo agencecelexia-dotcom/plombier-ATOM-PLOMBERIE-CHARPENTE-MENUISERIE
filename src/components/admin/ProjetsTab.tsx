@@ -36,7 +36,8 @@ const CATEGORIES = [
   { value: "Salle de bain", label: "Salle de bain" },
   { value: "Plomberie", label: "Plomberie" },
   { value: "Chauffe-eau", label: "Chauffe-eau" },
-  { value: "Chauffage", label: "Chauffage" },
+  { value: "Charpente", label: "Charpente" },
+  { value: "Menuiserie", label: "Menuiserie" },
 ];
 
 function slugify(str: string) {
@@ -266,7 +267,7 @@ export default function ProjetsTab() {
                 </div>
                 <div>
                   <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-neutral-500">Lieu</label>
-                  <input type="text" value={form.location} onChange={(e) => setForm((f) => ({ ...f, location: e.target.value }))} className="w-full rounded-lg border border-neutral-200 px-3 py-2.5 text-sm focus:border-primary-900 focus:outline-none" placeholder="Lyon 6e" />
+                  <input type="text" value={form.location} onChange={(e) => setForm((f) => ({ ...f, location: e.target.value }))} className="w-full rounded-lg border border-neutral-200 px-3 py-2.5 text-sm focus:border-primary-900 focus:outline-none" placeholder="Le Tampon" />
                 </div>
                 <div>
                   <label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-neutral-500">Année</label>

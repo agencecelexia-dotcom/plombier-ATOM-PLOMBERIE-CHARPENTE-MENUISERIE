@@ -11,8 +11,8 @@ import { blog, shared } from "@/config/content";
 
 export const metadata: Metadata = {
   ...generatePageMetadata({
-    title: `Blog plomberie ${siteConfig.address.city} | Conseils et astuces`,
-    description: `Conseils plomberie, astuces chauffage, guides rénovation. Le blog de ${siteConfig.name}, votre plombier à ${siteConfig.address.city}.`,
+    title: `Blog ${siteConfig.address.city} | Conseils plomberie, charpente, menuiserie`,
+    description: `Conseils plomberie, astuces charpente et menuiserie, guides rénovation. Le blog de ${siteConfig.name}, votre artisan au ${siteConfig.address.city}.`,
     path: "/blog",
   }),
   robots: { index: false, follow: true },
