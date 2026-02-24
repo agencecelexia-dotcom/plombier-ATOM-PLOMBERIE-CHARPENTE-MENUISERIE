@@ -38,8 +38,8 @@ export const clientConfig = {
     instagram: "",
     google: "",
   },
-  domaine: "",
-  url: "",
+  domaine: "atom-plomberie.re",
+  url: "https://atom-plomberie.re",
   legal: {
     siret: "991 648 726 00016",
     rge: "",
